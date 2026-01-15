@@ -125,6 +125,24 @@ public class TelaPrincipal extends JFrame {
             return;
         }
 
+        if(senhaTexto.trim().length()< 6){
+            JOptionPane.showMessageDialog(this,
+                    "Sua senha precisa ter mais de 6 caracteres!",
+                    "Error",
+                    JOptionPane.WARNING_MESSAGE);
+
+            return;
+        }
+
+        if(!senhaTexto.matches(".*[!@#$%^&*(),.?\\\":{}|<>].*")){
+            JOptionPane.showMessageDialog(this,
+                    "Sua senha tem que ter pelo menos UM caractere especial!",
+                    "Error",
+                    JOptionPane.WARNING_MESSAGE);
+
+            return;
+        }
+
         usuarios.add(nomeTexto);
 
         JOptionPane feito = new JOptionPane(
