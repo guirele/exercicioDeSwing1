@@ -22,6 +22,31 @@ Projeto simples desenvolvido em **Java Swing** com o objetivo de praticar e ir d
 - Swing
 - IntelliJ
 
+---
+## 📂 Estrutura do Projeto
+
+O projeto está organizado em **três classes principais**, para manter o código limpo e modular:
+
+1. **Classe `TelaPrincipal`**  
+   - Responsável pela tela principal do sistema.  
+   - Contém botões que permitem navegar para outras telas (como cadastro).  
+   - Controla a visibilidade das telas usando `setVisible(true/false)`.
+   - Tela de cadastro de usuários. 
+   - Faz validação básica dos campos (não permite campos vazios).
+   - Mostra mensagens de sucesso ou erro usando `JOptionPane`.
+
+2. **Classe `Tabela`**  
+   - Armazena os dados em um **`ArrayList`** que funciona como banco de dados improvisado.  
+
+
+3. **Classe `Main`**  
+   - Classe principal que **inicia a aplicação**.  
+   - Cria a instância do menu e define sua visibilidade.
+
+> Essa organização separa a lógica de interface (telas) da lógica de inicialização do programa, facilitando manutenção e evolução do projeto.
+
+---
+
 ## 📚 Observações
 
 Este projeto foi criado para **aprender mais sobre SWINGS e organização**.  
