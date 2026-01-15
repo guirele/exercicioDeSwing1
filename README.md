@@ -12,7 +12,7 @@ Projeto simples desenvolvido em **Java Swing** com o objetivo de praticar e ir d
 
 - Tela principal com menu
 - Tela de cadastro
-- Validação básica de campos
+- Validação básica de campos e validação de senhas
 - Uso de `JOptionPane`
 - Limpeza dos campos ao retornar ao menu
 
