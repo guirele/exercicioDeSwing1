@@ -35,11 +35,11 @@ O projeto está organizado em **três classes principais**, para manter o códig
    - Faz validação básica dos campos (não permite campos vazios).
    - Mostra mensagens de sucesso ou erro usando `JOptionPane`.
 
-2. **Classe `Tabela`**  
+2. **Classe `TelaUsarios`**  
    - Armazena os dados em um **`ArrayList`** que funciona como banco de dados improvisado.  
 
 
-3. **Classe `Main`**  
+3. **Classe `App`**  
    - Classe principal que **inicia a aplicação**.  
    - Cria a instância do menu e define sua visibilidade.
 
