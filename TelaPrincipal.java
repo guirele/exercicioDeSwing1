@@ -10,8 +10,10 @@ public class TelaPrincipal extends JFrame {
     private JButton botaoSair;
     private JTextField nome;
     private JPasswordField senha;
+    private ArrayList<String> usuarios;
 
-    public TelaPrincipal(){
+    public TelaPrincipal(ArrayList<String> usuarios){
+        this.usuarios = usuarios
         configurarFrame();
         configurarTelaPrincipal();
         configurarTelaCadastro();
@@ -122,6 +124,8 @@ public class TelaPrincipal extends JFrame {
                     JOptionPane.WARNING_MESSAGE);
             return;
         }
+
+        usuarios.add(nomeTexto);
 
         JOptionPane feito = new JOptionPane(
                 "Cadastro Feito!",
